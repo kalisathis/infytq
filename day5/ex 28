@@ -1,0 +1,19 @@
+def find_winner_of_the_day(*match_tuple):
+    c1=0
+    c2=0
+    for i in match_tuple:
+        if(i=="Team1"):
+            c1+=1
+        else:
+            c2+=1
+    if(c1>c2):
+        return "Team1"
+    elif(c1<c2):
+        return "Team2"
+    else:
+        return "Tie"
+
+#Invoke the function with each of the print statements given below
+print(find_winner_of_the_day("Team1","Team2","Team2","Team1","Team2"))
+#print(find_winner_of_the_day("Team1","Team2","Team1","Team2"))
+

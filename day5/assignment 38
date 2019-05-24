@@ -1,0 +1,32 @@
+
+#PF-Assgn-38
+
+def check_double(number):
+    ss=[]
+    kk=[]
+    s=number
+    k=number*2
+    c=0
+    if(len(str(s))==len(str(k))):
+        while s!=0:
+            t1=s%10
+            s=s//10
+            t2=k%10
+            k=k//10
+            ss.append(t1)
+            kk.append(t2)
+        ss.sort()
+        kk.sort()
+        for i in range(0,len(kk)):
+                if(kk[i]==ss[i]):
+                    c+=1
+    else:
+        return False
+
+    if(c==len(ss)):
+        return True
+    else:
+        return False
+
+#Provide different values for number and test your program
+print(check_double(125874))

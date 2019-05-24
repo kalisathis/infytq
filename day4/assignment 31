@@ -1,0 +1,14 @@
+#PF-Assgn-31
+def check_palindrome(word):
+    
+    #Remove pass and write your logic here
+    for i in range(len(word)//2):
+        if(word[i]!=word[len(word)-i-1]):
+            return False
+    return True
+
+status=check_palindrome("malayalam")
+if(status):
+    print("word is palindrome")
+else:
+    print("word is not palindrome")

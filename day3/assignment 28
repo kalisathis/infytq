@@ -1,0 +1,23 @@
+#PF-Assgn-28
+
+def find_max(num1, num2):
+    max_num=-1
+    if(num1>=num2):
+        return max_num
+    list=[]
+    c=0
+    
+    # Write your logic here
+    for i in range(num1,num2+1):
+        if(i>=10 and i<=99):
+            if(i%3==0 and i%5==0):
+                list.append(i)
+                c=1
+    if(c==0):
+        return max_num
+    else:
+        return list[-1]
+
+#Provide different values for num1 and num2 and test your program.
+max_num=find_max(10,15)
+print(max_num)
