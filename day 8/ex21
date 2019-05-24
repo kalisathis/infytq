@@ -1,0 +1,13 @@
+#PF-TCV-Tryout
+#PF-TCV-Exer-21
+import pytest
+from <packagename>.solution import function_name
+
+
+def check_registration_number_1():
+    result=check_registration_number(9099)
+    assert result==True
+
+def check_registration_number_2():
+    result=check_registration_number(2036)
+    assert result==False
