@@ -1,0 +1,18 @@
+#PF-Prac-8
+def calculate_net_amount(trans_list):
+    #start writing your code here
+    net_amount=0
+    for key in trans_list:
+        a=[]
+        a=key.split(":")
+        if(a[0]=='D'):
+            net_amount=net_amount+int(a[1])
+        else:
+            net_amount=net_amount-int(a[1])
+
+    
+    
+    return net_amount
+
+trans_list=["D:300","D:200","W:200","D:100"]
+print(calculate_net_amount(trans_list))
