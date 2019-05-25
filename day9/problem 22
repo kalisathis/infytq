@@ -1,0 +1,10 @@
+#PF-Tryout
+def diagonal_stars(number):
+   #start writing your code here
+    for i in range(0,number):
+        for j in range(i):
+            print(".",end="")
+        print("*")
+
+number=6    
+diagonal_stars(number)
