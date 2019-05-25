@@ -1,0 +1,18 @@
+#PF-Tryout
+def sing_99_bottles():
+   #start writing your code here
+   a=" bottles of beer on the wall,"
+   b=" bottles of beer."
+   c="Take one down, pass it around,"
+   d=" bottles of beer on the wall."
+   s=""
+   t=""
+   for i in range(99,1,-1):
+       s=s+str(i)+a+str(i)+b
+       t=t+c+str(i-1)+d
+       print(s)
+       print(t)
+       s=""
+       t=""
+   
+sing_99_bottles()
