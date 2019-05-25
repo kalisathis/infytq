@@ -2,7 +2,7 @@
 def check_numbers(num1,num2):
     #start writing your code here
     num_list=[]
-    for i in range(num2+1,num1,-1):
+    for i in range(num1,num2+1):
         for j in range(num1,num2+1):
             if(i%j==0 and i not in num_list and i!=j):
                 num_list.append(i)
