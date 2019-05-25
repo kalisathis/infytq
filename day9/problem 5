@@ -1,0 +1,18 @@
+#PF-Prac-5
+def count_digits_letters(sentence):
+    dig=0
+    let=0
+    result_list=[]
+    for i in sentence:
+        if((i>="a" and i<="z") or (i>="A" and i<="Z")):
+            let+=1
+        elif(i>="0" and i<="9"):
+            dig+=1
+    result_list.append(let)
+    result_list.append(dig)
+
+    
+    return result_list
+
+sentence="Infosys Mysore 570027"
+print(count_digits_letters(sentence))

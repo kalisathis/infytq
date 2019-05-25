@@ -1,0 +1,13 @@
+#PF-Prac-4
+def find_nine(nums):
+    c=1
+    for i in range(len(nums)):
+        if(c<5 and nums[i]==9):
+            return True
+        c+=1
+    return False
+	    
+    
+
+nums=[0,1,9]
+print(find_nine(nums))

@@ -1,0 +1,15 @@
+#PF-Prac-1
+import re
+def add_string(str1):
+  #start writing your code here
+    if(len(str1)>3):
+        if(re.search(r"ing$",str1)!=None):
+            str1+="ly"
+        else:
+            str1+="ing"
+    return str1
+      
+
+  
+str1="enjoy"
+print(add_string(str1))
