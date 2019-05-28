@@ -1,0 +1,15 @@
+#OOPR-Exer-4
+class Athlete:
+    def __init__(self,name,gender):
+        self.__name=name
+        self.__gender=gender
+
+    def running(self):
+        if(self.__gender=="girl"):
+            print("150mtr running")
+        else:
+            print("200mtr running")
+k=Athlete("Maria","girl")
+k.running()
+
+                                        
