@@ -1,0 +1,23 @@
+#OOPR-Exer-8
+class Juggler:
+    def __init__(self,name):
+        self.__name=name
+
+    def juggles(self,jugglingitem):
+        #write the code to make the juggler juggle
+        s=self.__name+"is juggling with "+jugglingitem.get_name()
+        print(s)
+        
+
+class JugglingItem:
+    def __init__(self,name):
+        self.__name=name
+
+    def get_name(self):
+        return self.__name
+        
+k=Juggler("Jack Bremlov")
+i=JugglingItem("knives")
+l=Juggler("Anthony Gatto")
+j=JugglingItem("balls")
+k.juggles(i)
