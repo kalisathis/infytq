@@ -1,3 +1,4 @@
+
 class Vehicle:
     def __init__(self):
         self.__vehicle_id = None
@@ -30,10 +31,9 @@ class Vehicle:
         return self.__vehicle_type
     
     def calculate_premium(self):
-        if(self.__vehicle_type=="TwoWheeler"):
+        if(self.__vehicle_type=="Two Wheeler"):
             self.__premium_amount=self.__vehicle_cost*2/100
-            print(self.__premium_amount)
-        elif(self.__vehicle_type=="FourWheeler"):
+        elif(self.__vehicle_type=="Four Wheeler"):
             self.__premium_amount=self.__vehicle_cost*6/100
             print(self.__premium_amount)
         else:
