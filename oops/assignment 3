@@ -20,6 +20,3 @@ class item:
         self.description =None
         self.price_per_unit = None
 
-Ram=Customer()
-Ram.purchases()
-Ram.pays_bill()
