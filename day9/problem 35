@@ -1,0 +1,9 @@
+a=int(input())
+b=[["","M","MM","MMM","MMMM"],["","C","CC","CCC","DC","D","CD","CCD","CCCD","MC"],["","X","XX","XXX","LX","L","XL","XXL","XXXL","CX"],["","I","II","III","VI","V","IV","IIV","IIIV","XI"]]
+ans=""
+i=-1
+while(a>0):
+    ans+=b[i][a%10]
+    i=i-1
+    a=a//10
+print(ans[::-1])
