@@ -1,0 +1,1 @@
+select prodid,sum(quantity)"QTY_SOLD" from  saledetail  group by prodid having min(quantity)>1
