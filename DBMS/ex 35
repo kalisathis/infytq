@@ -1,0 +1,1 @@
+select to_char(to_date('Jan/10/2015','mm/dd/yyyy'),'Month') as "MONTH",250000 as "AMOUNT" from dual
