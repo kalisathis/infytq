@@ -1,0 +1,1 @@
+select prodid,pdesc,price "Old_Price",round(price*.775,2)"New_Price" from product where category='Sports'
