@@ -1,0 +1,3 @@
+select empid,empname,worksin
+from empdetails
+where designation='Billing Staff'
