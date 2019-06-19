@@ -1,0 +1,3 @@
+select job,avg(sal)"Average Salary" 
+from emp where job='MANAGER' or job='ANALYST' 
+group by job 
