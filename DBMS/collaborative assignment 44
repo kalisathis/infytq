@@ -1,0 +1,3 @@
+select itemcode 
+from item
+where Abs(qtyonhand-reorderlevel) > 50
