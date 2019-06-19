@@ -1,0 +1,25 @@
+select itemtype,
+case
+when price>0 and price<500 then 'Cheap'
+when price>499 and price<2000 then 'Affordable'
+when price>1999 and price<5000 then 'Expensive'
+when price>4999 then 'Very Expensive'
+end as classification
+
+from item 
+
+group by itemtype,
+case
+when price>0 and price<500 then 'Cheap'
+when price>499 and price<2000 then 'Affordable'
+when price>1999 and price<5000 then 'Expensive'
+when price>4999 then 'Very Expensive'
+end 
+
+order by itemtype,
+case
+when price>0 and price<500 then 'Cheap'
+when price>499 and price<2000 then 'Affordable'
+when price>1999 and price<5000 then 'Expensive'
+when price>4999 then 'Very Expensive'
+end
