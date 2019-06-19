@@ -1,0 +1,5 @@
+select itemtype,category,round(avg(price),2) "Average item price"
+from item 
+where itemtype<>'Apparels' 
+group by itemtype,category 
+having round(avg(price),2)<2000
