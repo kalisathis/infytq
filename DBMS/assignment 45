@@ -1,0 +1,4 @@
+select itemcode,avg(qtyavailable)"Average Quantity"
+from retailstock 
+group by itemcode
+having avg(qtyavailable)<75
