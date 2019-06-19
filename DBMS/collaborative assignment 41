@@ -1,0 +1,4 @@
+select to_char(qdate,'Month') month,count(*) quotationcount
+from quotation
+group by to_char(qdate,'Month') 
+order by to_char(qdate,'Month')
