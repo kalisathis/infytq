@@ -1,0 +1,5 @@
+select pymtmode,count(*) pymtcount
+from orders
+where extract(year from pymtdate)<2015
+group by pymtmode
+having count(*)>1
