@@ -1,0 +1,5 @@
+select * from salesman 
+where sname like '%e%' and location like '%o%' 
+union all 
+select * from salesman
+where location like '%a%' and sname like'%a%'
