@@ -1,0 +1,3 @@
+select id,ename,dept,e.compid,c.make 
+from employee e inner join computer c 
+on e.compid=c.compid
