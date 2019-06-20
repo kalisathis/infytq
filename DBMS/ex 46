@@ -1,0 +1,4 @@
+select e.dept,count(c.make) "NUMBER OF COMPUTERS" from employee e 
+inner join computer c 
+on make='Dell' and e.compid=c.compid
+group by e.dept,c.make
