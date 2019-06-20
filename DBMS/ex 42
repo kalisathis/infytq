@@ -1,0 +1,5 @@
+select prodid,pdesc,category,discount from Product 
+where discount < 10
+UNION 
+select prodid,pdesc,category,discount from Product 
+where CATEGORY IN 'Sports' 
