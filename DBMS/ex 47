@@ -1,0 +1,3 @@
+select s.saleid,s.sldate
+from sale s inner join salesman m 
+on s.sid=m.sid and m.location='London'
