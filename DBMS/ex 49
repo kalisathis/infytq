@@ -1,0 +1,2 @@
+select m.sname,s.saleid
+from salesman m left outer join sale s on s.sid=m.sid
