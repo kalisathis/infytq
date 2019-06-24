@@ -1,0 +1,4 @@
+select i.itemcode,i.descr,q.sname 
+from item i 
+inner join quotation q 
+on i.itemcode=q.itemcode 
