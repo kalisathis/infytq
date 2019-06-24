@@ -1,0 +1,3 @@
+select c.custid "Customer Id",c.custname "Customer Name"
+from customer c join 
+empdetails e on e.emailid=c.emailid
