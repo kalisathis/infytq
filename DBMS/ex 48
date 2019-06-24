@@ -1,0 +1,4 @@
+select s.sid,s.sname,s.location 
+from salesman s 
+inner join salesman m on 
+s.sid!=m.sid and s.location=m.location
