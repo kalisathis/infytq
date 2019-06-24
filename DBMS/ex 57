@@ -1,0 +1,4 @@
+select s.sid,s.sname 
+from salesman s 
+left join sale m on s.sid=m.sid
+where m.sid is null
